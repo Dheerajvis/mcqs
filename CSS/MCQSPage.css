@@ -1,0 +1,107 @@
+/*---------------------------MCQS Page-------------------------------*/
+
+.mcqs-page{
+  display: none;
+}
+
+.mcqs-header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background: #636e72;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+}
+
+.mcqs-studentName {
+  background: #7c8a8f;
+  padding: 11px 60px;
+  color: white;
+  font-weight: 400;
+  font-size: 1.8em;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.timer {
+  background: #ff7675;
+  color: white;
+  padding: 4px 24px;
+  font-weight: 400;
+  font-size: 1.4em;
+  border-radius: 50px;
+}
+
+.star-num {
+  color: white;
+  font-weight: 400;
+}
+
+.starred-head {
+  position: relative;
+  margin-left: 5px;
+  margin-right: 60px;
+  color: #ffad13;
+  font-size: 1.2em;
+}
+
+.mcqs-header {
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.allQue {
+  position: absolute;
+  z-index: -1;
+  margin-top: 70px;
+  text-align: center;
+  width: 100%;
+}
+
+.mcqs-qone {
+  margin: auto;
+  margin-top:20px; 
+  width: 610px;
+  left: 20px;
+  background: #e1e1e1;
+  border: solid 2px white;
+  border-radius: 10px;
+}
+
+.que-pre {
+  display: flex;
+  text-align: left;
+  word-break: break-all;
+  padding: 16px 15px 0px 6px;
+  color: rgb(73, 73, 73);
+  font-weight: 500;
+}
+
+.starred-que {
+  position: relative;
+  padding: 0px 10px 0 10px;
+  color: #ffad13;
+  font-size: 1.2em;
+}
+
+.mcqs-opt {
+  text-align: left;
+  word-break: break-all;
+}
+
+.opt-row {
+  display: flex;
+  justify-content: space-around;
+}
+.opt-row-two {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 12px;
+}
+
+.submit-btn {
+  width: 120px;
+  height: 40px;
+  font-size: 1.2em;
+  margin: 20px;
+}

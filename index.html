@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
+  <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="CSS/LogInPageStyle.css" />
+  <link rel="stylesheet" href="CSS/CreateQuePageStyle.css" />
+  <link rel="stylesheet" href="CSS/MCQSPage.css" />
+  <title>ExamPage</title>
+</head>
+
+<body>
+  <!-------------------------log in Page-------------------------->
+  <div class="log-in-page">
+    <div class="log-in-box">
+      <h2>Log in Page</h2>
+
+      <label for="input-name">Name</label>
+      <input type="text" id="input-name" placeholder="Type your Name here" />
+      <label for="input-password">Password</label>
+      <input type="password" id="input-password" placeholder="Type Password" />
+      <button class="login-btn" onclick="showName()">Login</button>
+    </div>
+  </div>
+
+  <!----------------------Create question Page-------------------->
+  <div class="create-question-page">
+    <div class="col">
+      <div class="row">
+        <div class="add-que">
+          <div class="queHead">
+            <h2>Add Questions</h2>
+            <button class="btn">Logout</button>
+          </div>
+          <div class="create-que">
+            <input type="text" name="question" id="question" placeholder="Type questions here" />
+            <div class="opt-radio">
+              <input type="radio" name="options-radio" />
+              <span for="options-radio" class="radio_style"></span>
+              <input type="text" />
+            </div>
+            <div class="opt-radio">
+              <input type="radio" name="options-radio" />
+              <span class="radio_style"></span>
+              <input type="text" />
+            </div>
+            <div class="opt-radio">
+              <input type="radio" name="options-radio" />
+              <span class="radio_style"></span>
+              <input type="text" />
+            </div>
+            <div class="opt-radio">
+              <input type="radio" name="options-radio" />
+              <span class="radio_style"></span>
+              <input type="text" />
+            </div>
+            <div class="insrt-clr">
+              <button id="insert-que" class="btn">Insert</button>
+              <button id="clear-que-lists" class="btn">Clear List</button>
+            </div>
+          </div>
+        </div>
+        <div class="que">
+          <div class="que-style">
+            <h4 class="que-text">This is question</h4>
+            <button id="edit-que" class="btn">Edit</button>
+          </div>
+        </div>
+      </div>
+      <div class="result">
+        <div class="res-head">
+          <h2 class="head-text">Results</h2>
+          <button class="btn clear-results">Clear results</button>
+        </div>
+        <div class="result-names">
+          <div class="name-style">
+            <h4 class="name-text">Student Name</h4>
+            <h4 class="score-text">10/7</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------MCQS Page------------------------------->
+  <div class="mcqs-page">
+    <div class="mcqs-header">
+      <h2 class="mcqs-studentName">Student Name</h2>
+      <h3 class="timer">00:30:19</h3>
+      <h2 class="star-num">2<i class="fas fa-star starred-head"></i></h2>
+    </div>
+    <div class="allQue">
+      <div class="mcqs-qone">
+        <h3 class="que-pre"><i class="fas fa-star starred-que"></i><span id="que-index">1.</span> Questions one text
+        </h3>
+        <div class="mcqs-opt">
+          <div class="opt-row">
+            <div class="opt-radio">
+              <input type="radio" class="mcqs-opt-radio" name="que-radio" id="a" />
+              <span class="radio_style"></span>
+              <label class="mcqs-opt-lables" for="a">OptionA</label>
+            </div>
+            <div class="opt-radio">
+              <input type="radio" class="mcqs-opt-radio" name="que-radio" id="b" />
+              <span class="radio_style"></span>
+              <label cla.opss="mcqs-opt-lab les" for="b">OptionB</label>
+            </div>
+          </div>
+          <div class="opt-row-two">
+            <div class="opt-radio">
+              <input type="radio" class="mcqs-opt-radio" name="que-radio" id="c" />
+              <span class="radio_style"></span>
+              <label class="mcqs-opt-lables" for="c">OptionC</label>
+            </div>
+            <div class="opt-radio">
+              <input type="radio" class="mcqs-opt-radio" name="que-radio" id="d" />
+              <span class="radio_style"></span>
+              <label class="mcqs-opt-lables" for="d">OptionD</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn submit-btn">Submit</button>
+    </div>
+</body>
+
+</html>
+
+<script src="Js/index.js"></script>
